@@ -1,4 +1,4 @@
-# React Weather App
+# Cross Platform React Weather App
 
 A weather app built with React and Vite, powered by [Open-Meteo](https://open-meteo.com/).
 No API key, account, or billing setup required.
