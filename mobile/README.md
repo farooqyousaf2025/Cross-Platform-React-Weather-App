@@ -1,4 +1,4 @@
-# Weather for Android phone and Android TV
+# Cross Platform Weather for Android phone and Android TV
 
 The mobile companion to the web app in this repository. Built with **Expo** and the
 **[react-native-tvos](https://github.com/react-native-tvos/react-native-tvos)** fork of React

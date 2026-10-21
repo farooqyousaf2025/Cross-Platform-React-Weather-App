@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Weather",
-    "slug": "react-weather-mobile",
+    "name": "Cross Platform Weather",
+    "slug": "cross-platform-weather-mobile",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",

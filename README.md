@@ -56,7 +56,8 @@ Two practical constraints:
 ### Android phone and Android TV app
 
 Built with Expo and the `react-native-tvos` fork, so a single codebase targets both phone and
-TV. See `mobile/README.md` for setup and build commands.
+TV. See `mobile/README.md` for setup and build commands. On a device it installs as
+**Cross Platform Weather** (package `com.qoder.weather`).
 
 | Target | Status |
 | --- | --- |
