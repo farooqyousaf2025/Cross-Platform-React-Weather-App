@@ -83,6 +83,7 @@ prebuild. To keep two parallel builds, generate the TV variant into a separate c
 index.js                          Expo entry, registers src/App.jsx
 app.json                          Expo config, android package, config-tv plugin
 metro.config.js                   Adds ../shared to Metro's watchFolders
+assets/tv-banner.png              640x360 Android TV launcher banner
 src/
   App.jsx                         State, data loading, offline cache, screen layout
   theme.js                        Colours plus the phone/TV size scale
@@ -105,9 +106,11 @@ src/
 - **No "My location".** The web app uses the browser's geolocation API, which has no equivalent
   here; adding it means installing and configuring `expo-location`. Search is the only way to
   change city.
-- **Android TV banner.** Android TV launchers expect a banner drawable. The `config-tv` plugin
-  only supplies one via its `androidTVBanner` option, and no banner image is included yet, so
-  the TV build may show a placeholder in the launcher.
+- **Android TV banner.** Android TV launchers need a banner drawable, otherwise they truncate the
+  app name in the home row. `assets/tv-banner.png` (640x360) is supplied to the `config-tv` plugin
+  via its `androidTVBanner` option, which copies it into every `drawable*` density folder and sets
+  `android:banner` in the generated manifest. Regenerating it after a `--clean` prebuild is handled
+  by the plugin, so nothing needs to be edited by hand.
 - **Not Expo Go.** Expo Go cannot load a project that swaps React Native for the TV fork; use a
   dev client or a full build.
 - The release APK is signed with the debug keystore that the template generates. Configure a

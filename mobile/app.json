@@ -22,7 +22,8 @@
       [
         "@react-native-tvos/config-tv",
         {
-          "removeFlipperOnAndroid": true
+          "removeFlipperOnAndroid": true,
+          "androidTVBanner": "./assets/tv-banner.png"
         }
       ]
     ]
