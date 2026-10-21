@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Weather",
+    "slug": "react-weather-mobile",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0d1522",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.qoder.weather",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0d1522",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "removeFlipperOnAndroid": true
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+dist
+dev.log
+*.local
+.DS_Store
+
+# local build output
+android-build.log
+*.apk
+.test-shots/
